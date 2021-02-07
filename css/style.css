@@ -13,14 +13,14 @@ html{
     width: 100%;
     height: 15%;
     padding: 0.5rem 0.2rem;
-    background-color: darkgreen;
+    background-color: #303031;
 }
 
 .nav_espera {
     width: 95%;
     height: 6rem;
     margin: 0 auto;
-    background-color: darkred;
+    background-color: #596775;
     display: flex;
     flex-wrap: wrap;
     border-radius: 5%;
@@ -31,7 +31,7 @@ html{
 .contaner {
     width: 100%;
     height: 70%;
-    background-color: darkcyan;
+    background-color: #595a65;
     display: flex;
     flex-wrap: wrap;
     
@@ -40,7 +40,7 @@ html{
 .bienvenida {
     width: 100%;
     height: 50rem;
-    background-color: cornflowerblue;
+    background-color: #484951;
     margin: 1rem 0;
     display: flex;
     flex-wrap: wrap;
@@ -52,32 +52,51 @@ html{
     height: 12rem;
     transform: rotate(0deg);
     border-radius: 50%;
-    box-shadow: 3.8rem 1.8rem white;
-    margin: 1rem 10rem 0;
+    box-shadow: 3.8rem 1.8rem #ffffff;
+    margin: 0.5rem 13.5rem 0;
     position: absolute;
     
 }
 /*Montañas*/
 
 .b_mov2 {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     border-left: 13rem solid transparent;
     border-right: 13rem solid transparent;
-    border-bottom: 20rem solid #ffd;
+    border-bottom: 20rem solid #4c6274;
     margin-top: 30rem;
-    margin-left: -5rem;
+    margin-left: -6.5rem;
     position: absolute;
    
 }
+
+
 .b_mov3 {
     width: 20rem;
-    height: 26rem;
+    height: 22rem;
     border-left: 13rem solid transparent;
     border-right: 13rem solid transparent;
-    border-bottom: 26rem solid #000;
+    border-bottom: 26rem solid #7792a6;
     margin-top: 24rem;
     margin-left: 6rem;
+    position: absolute;
+   
+}
+
+
+
+
+
+.b_mov4 {
+    width: 20rem;
+    height: 30rem;
+    border-left: 13rem solid transparent;
+    border-right: 13rem solid transparent;
+    border-bottom: 26rem solid  #91b2ca;
+    margin-top: 19rem;
+    margin-left: 2rem;
+    
    
 }
 
@@ -87,7 +106,8 @@ html{
 .foot {
     width: 100%;
     height: 15%;
-    background-color: darkolivegreen;
+    background-color: #0e1127;
+    color: white;
 }
 
 
