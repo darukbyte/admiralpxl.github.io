@@ -301,10 +301,10 @@ div{
     height: 5rem;
     border-radius: 25%;
     background-color: #531a58;
-    margin: 0.5rem;
+    margin: 0 auto;
 }
 
-@media (width: 375px){
+@media (min-width: 375px){
     .b_mov {
        margin-left: 19rem;
         
