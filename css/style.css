@@ -11,7 +11,7 @@ html{
 /*Estilos para el Menu Principal-Main*/
 .contaner {
     width: 100%;
-    height: 190rem;
+    height: 180rem;
     background-color: #303031;
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +20,7 @@ html{
 
 .bienvenida {
     width: 100%;
-    height: 48rem;
+    height: 50rem;
     background-color: #131230;
     margin: 1rem 0;
     margin-top: 0;
@@ -59,7 +59,7 @@ html{
     border-left: 13rem solid transparent;
     border-right: 13rem solid transparent;
     border-bottom: 22rem solid #4c6274;
-    margin-top: 26rem;
+    margin-top: 28rem;
     margin-left: -6.5rem;
     position: absolute;
    
@@ -71,7 +71,7 @@ html{
     border-left: 10rem solid transparent;
     border-right: 10rem solid transparent;
     border-bottom: 18rem solid #718491;
-    margin-top: 26rem;
+    margin-top: 28rem;
     margin-left: 6rem;
     position: absolute;
    
@@ -83,7 +83,7 @@ html{
     border-left: 13rem solid transparent;
     border-right: 16rem solid transparent;
     border-bottom: 26rem solid  #607483;
-    margin-top: 18rem;
+    margin-top: 20rem;
     margin-left: 2rem;
     
    
@@ -93,7 +93,7 @@ html{
 
 .yo {
     width: 100%;
-    height: 38rem; 
+    height: 33rem; 
     background-color: #131230;
     margin: 1rem 0;
     font-family: 'Adamina', serif;
@@ -108,7 +108,7 @@ html{
 }
 
 .yo p{
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 1.2rem;
     color: #3552a7;
 
@@ -118,7 +118,7 @@ html{
 
 .conocimientos {
     width: 100%;
-    height: 38rem; 
+    height: 28rem; 
     background-color: #131230;
     margin: 0;
     font-family: 'Adamina', serif;
@@ -132,7 +132,7 @@ html{
 }
 
 .conocimientos p{
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 1.2rem;
     color: #3552a7;
 
@@ -142,7 +142,7 @@ html{
 
 .estudios{
     width: 100%;
-    height: 30rem; 
+    height: 29rem; 
     background-color: #131230;
     margin: 1rem 0;
     font-family: 'Adamina', serif;
@@ -157,7 +157,7 @@ html{
 }
 
 .estudios p{
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 1.2rem;
     color: #3552a7;
 
@@ -181,7 +181,7 @@ html{
 }
 
 .contactame p{
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 1.2rem;
     color: #3552a7;
 
