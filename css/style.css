@@ -31,6 +31,9 @@ html{
 /*Saludo*/
 
 .bien {
+    animation-name: bienvenido;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
     position: absolute;
     font-size: 3.5rem;
     color: #db2775;
@@ -41,19 +44,82 @@ html{
 
 /*Luna*/
 .b_mov {
-    
+    animation-name: luna;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     width: 12rem;
     height: 12rem;
     transform: rotate(0deg);
     border-radius: 50%;
     box-shadow: 3.8rem 1.8rem #cce5e2;
-    margin: 0.5rem 13.5rem 0;
+    margin: 0.5rem 14.5rem 0;
     position: absolute;
     
 }
+/**/
+
+div{
+    animation-name: estrella;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 10%;
+    transform: rotate(45deg);
+   
+}
+
+.es1{
+    margin-top: 10rem ;
+    margin-left: 18rem;
+}
+
+.es2{
+    margin-top: 20rem;
+    margin-left: 29rem;
+
+}
+
+.es3{
+    margin-top: 28rem ;
+    margin-left: 19rem;
+}
+
+.es4{
+    margin-top: 16rem ;
+    margin-left: 14rem;
+}
+
+.es5{
+    margin-top: 22rem ;
+    margin-left: 22.5rem;
+}
+
+.es6{
+    margin-top: 10rem ;
+    margin-left: 3rem;
+}
+
+.es7{
+    margin-top: 18rem ;
+    margin-left: 8rem;
+}
+
+.es8 {
+    margin-top: 23rem;
+    margin-left: 3rem;
+}
+
 /*Montañas*/
 
 .b_mov2 {
+    animation-name: mon1;
+    animation-duration: 4.6s;
+    animation-fill-mode: forwards;
     width: 18rem;
     height: 18rem;
     border-left: 13rem solid transparent;
@@ -66,6 +132,9 @@ html{
 }
 
 .b_mov3 {
+    animation-name: mon2;
+    animation-duration: 4.2s;
+    animation-fill-mode: forwards;
     width: 20rem;
     height: 22rem;
     border-left: 10rem solid transparent;
@@ -78,6 +147,9 @@ html{
 }
 
 .b_mov4 {
+    animation-name: mon3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
     width: 20rem;
     height: 30rem;
     border-left: 13rem solid transparent;
@@ -88,6 +160,23 @@ html{
     
    
 }
+
+.es9 {
+    margin-top: -1rem;
+    margin-left: -1rem;
+}
+
+.es10 {
+    margin-top: -1rem;
+    margin-left: -1rem;
+}
+
+.es11 {
+    margin-top: -1rem;
+    margin-left: -1rem;
+}
+
+
 
 /*Sobre mi*/
 
@@ -201,8 +290,13 @@ html{
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
+    height: 15rem;
 }
 .sec_con article {
+    animation-name: contacto;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     width: 5rem;
     height: 5rem;
     border-radius: 25%;
@@ -210,6 +304,139 @@ html{
     margin: 0.5rem;
 }
 
+@media (width: 375px){
+    .b_mov {
+       margin-left: 19rem;
+        
+    }
+
+    .es9 {
+        margin-top: 24rem;
+        margin-left: 8.7rem;
+    }
+
+    .es10 {
+        margin-top: 28rem;
+        margin-left: 27rem;
+    }
+
+    .es11 {
+        margin-top: 36rem;
+        margin-left: 29rem;
+    }
+
+    .sec_con{
+        justify-content: center;
+    }    
+
+    .sec_con article{
+
+        margin: 0 auto;
+
+    }
+
+    
+    
+
+}
+
+@keyframes luna {
+    from{
+        margin-top: -1rem;
+
+    } 
+
+
+    to {
+        margin-top: 1rem;
+    }
+}
+
+@keyframes bienvenido {
+    from{
+        margin-top: -10rem;
+
+    } 
+
+
+    to {
+        margin-top: 1rem;
+    }
+}
+
+@keyframes mon1 {
+    from{
+        margin-left: -30rem ;
+
+    } 
+
+
+    to {
+        margin-left: -6rem;
+    }
+}
+
+@keyframes mon2 {
+    from{
+        margin-left: -30rem ;
+
+    } 
+
+
+    to {
+        margin-left: 6rem;
+    }
+}
+
+@keyframes mon3 {
+    from{
+        margin-left: -30rem ;
+
+    } 
+
+
+    to {
+        margin-left: 2rem;
+    }
+}
+
+@keyframes estrella{
+
+    from{
+        transform: rotate(45deg);
+        width: 0.2rem;
+        height: 0.2rem;
+
+    }
+
+    
+    to {
+        transform: rotate(315deg);
+        width: 1rem;
+        height: 1rem;
+    }
+
+}
+
+@keyframes contacto{
+
+    from {
+
+        margin-top: 10rem;
+        transform: rotate(0);
+
+    }
+
+    50% {
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    to {
+        margin-top: 0.5rem;
+        transform: rotate(360deg);
+    }
+}
 
 
 
