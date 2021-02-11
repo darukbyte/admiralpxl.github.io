@@ -302,7 +302,7 @@ div{
     height: 5rem;
     border-radius: 25%;
     border: 0.2rem solid #db2775;
-    background-color: white;    
+    background-color: #3552a7;    
     margin: 0 auto;
 }
 
@@ -311,7 +311,35 @@ a{
 }
 
 .a1 {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXLb8sD95nxQgz_plnqfjiY10ID-KDva5fA&usqp=CAU');
+    background-image: url('/css/Iconos/twitter.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+.a2 {
+    background-image: url('/css/Iconos/instagram.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+.a3 {
+    background-image: url('/css/Iconos/linkedin.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+.a4 {
+    background-image: url('/css/Iconos/github.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+.a5 {
+    background-image: url('/css/Iconos/itch-io.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
