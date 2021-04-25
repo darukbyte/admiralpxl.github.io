@@ -14,28 +14,11 @@ html {
   width: 100%;
   height: 100px;
   display: grid;
-  background-color: #1F1F1F;
-  font-family: "Playfair Display", serif;
-  font-size: 2.3rem;
-  font-weight: lighter;
-}
-
-.header-list {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 1fr;
   place-items: center;
+  background-color: #1F1F1F;
 }
 
-.header-list li {
-  list-style: none;
-}
-
-.header-list li a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-.header-list li img {
+.header img {
   width: 70px;
   height: 80px;
 }
@@ -74,7 +57,7 @@ html {
 
 .main-container1 h2 {
   font-size: 1.8rem;
-  min-width: 260px;
+  min-width: 250px;
   line-height: 3.3rem;
   font-weight: 450;
 }
