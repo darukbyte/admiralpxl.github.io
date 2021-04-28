@@ -36,12 +36,19 @@ html {
   grid-template-rows: 180px 500px 240px;
 }
 
-.main-container1 .imagen, .main-container1 p, .main-container1 h1 {
+.main-contactme .form, .main-contactme p, .main-container1 .imagen, .main-container1 p, .main-container1 h1 {
   display: inherit;
   justify-self: center;
   align-self: center;
   width: 80%;
   height: auto;
+}
+
+.main-contactme h2, .main-portafolio h2 {
+  font-size: 5rem;
+  font-family: "Playfair Display", serif;
+  width: 100%;
+  margin: 30px;
 }
 
 .main-container1 h1 {
@@ -125,22 +132,16 @@ html {
   justify-content: space-evenly;
 }
 
-.main-portafolio h2 {
-  font-size: 5rem;
-  font-family: "Playfair Display", serif;
-  width: 100%;
-  margin: 30px;
-}
-
 .main-portafolio__card {
   width: 80%;
-  max-width: 340px;
+  max-width: 320px;
   height: 350px;
   margin: 20px;
   justify-self: center;
   display: grid;
   grid-template: repeat(3, 1fr)/repeat(2, 1fr);
   background-color: #3f3f3f;
+  border-radius: 5px;
 }
 
 .main-portafolio__card img {
@@ -196,4 +197,83 @@ html {
 
 .main-portafolio__card .ados {
   grid-column: 2;
+}
+
+.main-contactme {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.main-contactme p {
+  font-size: 1.8rem;
+  line-height: 3.3rem;
+  max-width: 470px;
+}
+
+.main-contactme .form {
+  height: 390px;
+  background-color: #3f3f3f;
+  margin: 30px;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.main-contactme .form form {
+  display: grid;
+  grid-template: repeat(5, 1fr)/repeat(2, 1fr);
+  width: 100%;
+}
+
+.main-contactme .form .form-stand {
+  width: 90%;
+  max-width: 240px;
+  height: 40px;
+  padding: 10px;
+  font-size: 1.8rem;
+  outline: none;
+  border-radius: 5px;
+  border: 3px solid #4298B3;
+  place-self: center;
+}
+
+.main-contactme .form .form-name {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+.main-contactme .form .form-lastname {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+
+.main-contactme .form .form-email {
+  grid-column: 1/3;
+  grid-row: 3;
+}
+
+.main-contactme .form .form-message {
+  height: 120px;
+  width: 90%;
+  max-width: 500px;
+  grid-column: 1/3;
+  grid-row: 4;
+}
+
+.main-contactme .form .form-send {
+  width: 90%;
+  height: 40px;
+  max-width: 150px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 12px;
+  outline: none;
+  border: 3px solid #4298B3;
+  border-radius: 5px;
+  justify-self: end;
+  align-self: center;
+  grid-column: 2;
+  grid-row: 5;
 }
