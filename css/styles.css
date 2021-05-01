@@ -36,7 +36,7 @@ html {
   grid-template-rows: 180px 500px 240px;
 }
 
-.main-sobremi p, .main-container1 .imagen, .main-container1 p, .main-container1 h1 {
+.main-sobremi p, .main-container1 .imagen, .main-container1 .p, .main-container1 h1 {
   display: inherit;
   justify-self: center;
   align-self: center;
@@ -57,7 +57,7 @@ html {
   max-height: 150px;
 }
 
-.main-container1 p {
+.main-container1 .p {
   font-size: 1.8rem;
   line-height: 3.3rem;
   align-self: start;
@@ -68,8 +68,8 @@ html {
   background-color: #4298B3;
   position: relative;
   display: grid;
-  height: auto;
-  grid-template: 120px 50px/repeat(3, 1fr);
+  height: 260px;
+  grid-template: 120px 70px/repeat(3, 1fr);
 }
 
 .main-container1 .imagen {
@@ -82,7 +82,7 @@ html {
   top: -120px;
 }
 
-.main-container1 div p {
+.main-container1 .div p {
   font-family: "Playfair Display", serif;
   font-size: 5.2rem;
   text-align: center;
@@ -205,11 +205,77 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .main-sobremi p {
   font-size: 1.8rem;
   line-height: 3.3rem;
   max-width: 470px;
+}
+
+@media (min-width: 450px) {
+  .main-container1 {
+    grid-template-rows: 180px 400px 240px;
+  }
+}
+@media (min-width: 700px) {
+  .main-container1 {
+    grid-template-rows: 180px 350px 240px;
+  }
+
+  .main-container1 .p {
+    align-self: start;
+    justify-self: start;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 900px) {
+  .main-container1 {
+    grid-template-rows: 180px 500px;
+    grid-template-columns: 70% 30%;
+  }
+
+  .main-container1 h1 {
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+
+  .main-container1 .p {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .main-container1 div {
+    grid-row-start: 1;
+    grid-column: 2;
+    height: 100vh;
+    grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+    top: -100px;
+  }
+
+  .main-container1 .imagen {
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+
+  .main-container1 .div p {
+    grid-column: 1/4;
+    grid-row: 3;
+  }
+
+  .github {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .twitter {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .linkedin {
+    grid-column: 3;
+    grid-row: 4;
+  }
 }
