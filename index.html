@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="On my odeyssy to become a Frontend Developer a learn something new every day.">
+        <meta name="description" content="On my odeyssy to become a Frontend Developer, Game Developer and NFT pixelartist a learn something new every day.">
         <meta name="robots" content="index,follow">
         <title>Junior Carrillo - Frontend Developer </title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -13,17 +13,21 @@
     </head>
     <body>
         <header class="header">
-            <nav>
-                <span class="header-logo"><a href="#"></a></span>
-                <div>
+            <nav class="header-nav">
+
+                <a  class="header-nav-logo" href="#"></a>
+
+                <div class="header-nav-name">
                     <h2>JUNIOR CARRILLO</h2>
                     <p>Frontend Developer</p>
                 </div>
-                <div>
+                
+                <div class="header-nav-hamburger-menu">
                     <input type="checkbox" id="menu">
                     <label for="menu"></label>
                 </div>
-                <ul>
+
+                <ul class="header-nav-hamburger-menu-open">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT ME</a></li>
                     <li><a href="#">SKILLS</a></li>
@@ -32,6 +36,7 @@
                     <li><a href="#">CONTACT ME</a></li>
                 </ul>
             </nav>
+
         </header>
         <main class="main">
 
@@ -39,16 +44,27 @@
                 <article>
                     <h1>HELLO, I´M JUNIOR CARRILLO FRONTEND DEVELOPER & CRYPTOARTIST ENTHUSIASTIC.</h1>
                     <p>I´m a self-taught person who starts learning about web technology & blockchain to improve my skills and help to build a future more accessible for everyone. My journey through this odyssey began every day learning something new and never stop do it. </p>
+
                     <div>
                         <span></span>
                         <p>currently in</p>
                         <p>Zulia, Venezuela</p>
                     </div>
+
                     <img src="" alt="mountein">
                     <div>
-                        <span>github</span>
-                        <span>twitter</span>
-                        <span>linkedin</span>
+                        <div>
+                            <span>github</span>
+                        </div>
+                        
+                        <div>
+                            <span>twitter</span>
+                        </div>
+                        
+                        <div>
+                            <span>linkedin</span>
+                        </div>
+                        
                     </div>
 
                 </article>
@@ -79,12 +95,12 @@
                         <li>CSS</li>
                         <li>JAVASCRIPT</li>
                         <li>ECMASCRIPT</li>
-                        <li>FIGMA</li>
+                        
                     </ul>
 
                     <ul>
+                        <li>FIGMA</li>
                         <li>SASS</li>
-                        <li>BEM (Methodology for Name Classes on CSS)</li>
                         <li>ENGLISH - B2</li>
                         <li>NATIVE SPANISH</li>
                     </ul>
@@ -120,6 +136,31 @@
             </section>
 
             <section class="main-contactme">
+                <div>
+                    <form action="send" method="POST">
+                        <div>
+                            <input type="text" placeholder="NAME">
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="LAST NAME">
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="SUBJECT">
+                        </div>
+
+                        <div>
+                            <textarea name="description" id="description" cols="30" rows="10" placeholder="DESCRIPTION"></textarea>
+                        </div>
+
+                        <div>
+                            <span></span>
+                            <button>SEND MESSAGE</button>
+                        </div>
+
+                    </form>
+                </div>
 
             </section>
 
@@ -132,8 +173,44 @@
 
         </main>
         <footer class="footer">
+            <div>
+                <span></span>
+                <h3>ADMIRALPXL</h3>
+            </div>
+
+            <div>
+                <h2>FOLLOW ME</h2>
+                
+                <div>
+                    <span>github</span>
+                </div>
+                
+                <div>
+                    <span>twitter</span>
+                </div>
+                
+                <div>
+                    <span>linkedin</span>
+                </div>
+            </div>
+
+            <div>
+                <h2>CONTACT ME</h2>
+
+
+
+                <div>
+                    <span></span>
+                    <p>currently in</p>
+                    <p>Zulia, Venezuela</p>
+                </div>
+
+                <p>Donwload <a href="#">Resume</a> </p>
+            </div>
 
         </footer>
+
         <script src="/js/index.js"></script>
+
     </body>
 </html>
