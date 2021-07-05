@@ -16,6 +16,7 @@ html {
   height: 60px;
   background-color: #4298B3;
   position: fixed;
+  z-index: 2;
 }
 
 .header-nav {
@@ -27,8 +28,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 8px #FFFFFF;
-          box-shadow: 0 0 8px #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  position: relative;
 }
 
 .header-nav-logo {
@@ -106,9 +107,56 @@ label::after {
 }
 
 .header-nav-name {
-  display: none;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.header-nav-name h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+}
+
+.header-nav-name p {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
 }
 
 .header-nav-hamburger-menu-open {
   display: none;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: auto;
+  background-color: #4298B3;
+  list-style: none;
+}
+
+.header-nav-hamburger-menu-open li {
+  padding: 15px;
+  margin: auto;
+  border-bottom: 0.5px solid #FFFFFF;
+  text-align: center;
+}
+
+.header-nav-hamburger-menu-open li a {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 15px 100px;
+}
+
+.header-nav-hamburger-menu-open li a:hover {
+  color: #1F1F1F;
 }
