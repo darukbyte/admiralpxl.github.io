@@ -1,3 +1,26 @@
+.main-skills, .main-aboutme {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-skills-info ul, .main-skills-info, .main-aboutme-info {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,8 +36,8 @@ html {
 
 .header {
   width: 100%;
-  height: 60px;
-  background-color: #4298B3;
+  height: 100px;
+  margin-bottom: 60px;
   position: fixed;
   z-index: 2;
 }
@@ -28,6 +51,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #4298B3;
   border-bottom: 1px solid #FFFFFF;
   position: relative;
 }
@@ -159,4 +183,291 @@ label::after {
 
 .header-nav-hamburger-menu-open li a:hover {
   color: #1F1F1F;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.main-presentation {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: auto;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 60px;
+}
+
+.main-presentation-info {
+  width: 80%;
+  height: auto;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.main-presentation-info-title {
+  width: 100%;
+  width: 100%;
+  max-width: 500px;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 5rem;
+  margin: 50px 0;
+}
+
+.main-presentation-info-subtitle {
+  width: 100%;
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.8rem;
+  font-family: "Karla", sans-serif;
+  line-height: 2.4rem;
+  margin: 30px 0px;
+}
+
+.main-presentation-info-location {
+  display: -ms-grid;
+  display: grid;
+  width: 190px;
+  height: 30px;
+  -ms-grid-columns: 50px 140px;
+  grid-template-columns: 50px 140px;
+  -ms-grid-rows: 30px;
+  grid-template-rows: 30px;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
+
+.main-presentation-info-location > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.main-presentation-info-location > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.main-presentation-info-location__logo {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  display: inline-block;
+  background-image: url("../assets/locations.svg");
+  background-size: cover;
+  background-postion: center;
+  background-repeat: none;
+  width: 48px;
+  height: 48px;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-presentation-info-location__sub {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  -ms-grid-row-align: end;
+      align-self: end;
+  margin-bottom: 2px;
+}
+
+.main-presentation-info-location__place {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-size: 1.8rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  width: 150px;
+  margin-bottom: 8px;
+}
+
+.main-presentation-image {
+  width: 100%;
+  height: 480px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.main-presentation-image__back {
+  display: inline-block;
+  background-image: url("../assets/mountein-up.jpg");
+  background-size: cover;
+  background-postion: center;
+  background-repeat: none;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main-presentation-image__back > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.main-presentation-image__back > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.main-presentation-image__back > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.main-presentation-image__back > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.main-presentation-image__back > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+.main-presentation-image__back > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+
+.main-presentation-image__back > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.main-presentation-image__back > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+
+.main-presentation-image__back > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.main-presentation-image__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 180px;
+  height: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-row-align: end;
+      align-self: end;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.main-presentation-image__media div {
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid #FFFFFF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-presentation-image__media div:hover {
+  background-color: #4298B3;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border: 1.5px solid #4298B3;
+}
+
+.main-presentation-image__media_github {
+  display: inline-block;
+  background-image: url("../assets/github.svg");
+  background-size: cover;
+  background-postion: center;
+  background-repeat: none;
+  width: 35px;
+  height: 35px;
+}
+
+.main-presentation-image__media_twitter {
+  display: inline-block;
+  background-image: url("../assets/twitter.svg");
+  background-size: cover;
+  background-postion: center;
+  background-repeat: none;
+  width: 35px;
+  height: 30px;
+}
+
+.main-presentation-image__media_linkendin {
+  display: inline-block;
+  background-image: url("../assets/linkedin.svg");
+  background-size: cover;
+  background-postion: center;
+  background-repeat: none;
+  width: 35px;
+  height: 30px;
+}
+
+.main-aboutme-info h2, .main-skills-info h2 {
+  width: 100%;
+  max-width: 300px;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 5rem;
+  font-weight: bold;
+  color: #4298B3;
+  margin-bottom: 10px;
+}
+
+.main-aboutme-info p, .main-skills-info p {
+  width: 100%;
+  max-width: 580px;
+  font-size: 1.8rem;
+  font-family: "Karla", sans-serif;
+  line-height: 2.4rem;
+  margin: 15px 0;
+  margin-bottom: 20px;
+}
+
+.main-skills-info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-skills-info ul {
+  width: 100%;
+  max-width: 580px;
+  font-size: 1.8rem;
+  font-family: "Karla", sans-serif;
+  line-height: 2.4rem;
+}
+
+.main-skills-info ul li {
+  margin: 8px 20px;
 }
