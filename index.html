@@ -6,6 +6,7 @@
         <meta name="robots" content="index,follow">
         <title>Junior Carrillo - Frontend Developer </title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="theme-color" content="#4298B3">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/iconpage.png">
         <link rel="stylesheet" href="./css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700&family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -87,6 +88,8 @@
 
                     <p>Also, I like Cryptoart and how this is changing the world for digital artists.</p>
 
+                    <a href="https://drive.google.com/file/d/1breKWsUTXV2-gRSp_ApIbIVSklm5fSYS/view?usp=sharing" target="_blank">Download Resume Here</a>
+
                 </article>
             </section>
 
@@ -118,32 +121,62 @@
             </section>
 
             <section class="main-portfolio">
+                <div class="main-portfolio-container">
+
                 <h2>PORTFOLIO</h2>
-                <article>
-                    <img src="" alt="project-image">
-                    <h3></h3>
-                    <p></p>
-                    <div>
+
+                <article class="main-portfolio-card">
+                    <div class="main-portfolio-card-img">
                         <span></span>
-                        <span></span>
-                        <p></p>
-                        <p></p>
                     </div>
+                    
+
+                    <div class="main-portfolio-card-info">
+
+                    <h3>INTERACTIVE PRICE SELECTOR</h3>
+                    <p class="main-portfolio-card-info__intro">This is a interactive price component make with SASS and Javascript, I also practice array and manipule DOM elements like the input range and check boxs.</p>
+                    <div class="main-portfolio-card-info__details">
+
+                        <div class="main-portfolio-card-info-links">
+
+                        <div class="main-portfolio-card-info-container">
+                            <a href="https://price-interactive.netlify.app/" target="_blank"
+                            class="main-portfolio-card-info__details__online"></a>
+                        </div>
+
+                        <div class="main-portfolio-card-info-container">
+                            <a href="https://github.com/admiralpxl/interactive-pricing-page" target="_blank"
+                            class="main-portfolio-card-info__details__repo"></a>
+                        </div>
+
+                    </div>
+                        <p class="p">technology uses</p>
+                        <p class="ptwo">SASS | CSS | JAVASCRIPT</p>
+                    </div>
+                </div>
                 </article>
 
+
+            </div>
             </section>
 
             <section class="main-nftgallery">
+                <div class="main-nftgallery-container">
                 <h2>MY NFT GALLERY</h2>
                 <p>I´m a cryptoartist enthusiastic who love the digital art (pixelart specially in landscape) & the blockchain technology, soo I cross my favorite hobbie and my knowledge about blockchain and start to create NFT of my random illustration.</p>
-                <p>You can also check my opensea.</p>
-                <article>
-                    <img src="" alt="NFT-image">
-                    <h3>title</h3>
+                <p>You can also check my <a href="https://opensea.io/admiralpxl">opensea.</a></p>
+                    <div class="main-nftgallery-containerart">
+
+                <article class="main-nftgallery-picture">
+                    <img src="./nfts/Two skys.png" alt="NFT-image">
+                    <h3><a href="#">Two skys</a></h3>
                 </article>
+                
+                </div>
+            </div>
             </section>
 
-            <section class="main-contactme">
+            <!-- <section class="main-contactme">
                 <div>
                     <form action="send" method="POST">
                         <div>
@@ -170,7 +203,7 @@
                     </form>
                 </div>
 
-            </section>
+            </section> -->
 
                 <!-- <section class="sec_con">
                   <a href="https://twitter.com/admiralpxl?s=08"> <article class="a1"></article></a>
@@ -181,43 +214,12 @@
 
         </main>
         <footer class="footer">
-            <div>
-                <span></span>
-                <h3>ADMIRALPXL</h3>
+
+            <div class="footer-credits">
+
+                <p>Made with 🤍 by Junior Carrillo | Copyright  ©2021</p>
             </div>
-
-            <div>
-                <h2>FOLLOW ME</h2>
-                
-                <div>
-                    <span>github</span>
-                </div>
-                
-                <div>
-                    <span>twitter</span>
-                </div>
-                
-                <div>
-                    <span>linkedin</span>
-                </div>
-            </div>
-
-            <div>
-                <h2>CONTACT ME</h2>
-
-
-
-                <div>
-                    <span></span>
-                    <p>currently in</p>
-                    <p>Zulia, Venezuela</p>
-                </div>
-
-                <p>Donwload <a href="#">Resume</a> </p>
-            </div>
-
         </footer>
-
         <script src="/js/index.js"></script>
 
     </body>

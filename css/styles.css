@@ -1,4 +1,4 @@
-.main-skills, .main-aboutme {
+.main-nftgallery, .main-portfolio, .main-skills, .main-aboutme {
   width: 100%;
   height: auto;
   padding-top: 20px;
@@ -10,7 +10,7 @@
           justify-content: center;
 }
 
-.main-skills-info ul, .main-skills-info, .main-aboutme-info {
+.main-nftgallery-container, .main-portfolio-container, .main-skills-info ul, .main-skills-info, .main-aboutme-info {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,8 +60,8 @@ html {
   display: inline-block;
   background-image: url("../assets/anchorlogo.svg");
   background-size: cover;
-  background-postion: center;
-  background-repeat: none;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 50px;
   height: 50px;
   margin-left: 1.2rem;
@@ -261,8 +261,8 @@ label::after {
   display: inline-block;
   background-image: url("../assets/locations.svg");
   background-size: cover;
-  background-postion: center;
-  background-repeat: none;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 48px;
   height: 48px;
   -ms-grid-row-align: center;
@@ -304,8 +304,8 @@ label::after {
   display: inline-block;
   background-image: url("../assets/mountein-up.jpg");
   background-size: cover;
-  background-postion: center;
-  background-repeat: none;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   display: -ms-grid;
@@ -407,8 +407,8 @@ label::after {
   display: inline-block;
   background-image: url("../assets/github.svg");
   background-size: cover;
-  background-postion: center;
-  background-repeat: none;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 35px;
   height: 35px;
 }
@@ -417,8 +417,8 @@ label::after {
   display: inline-block;
   background-image: url("../assets/twitter.svg");
   background-size: cover;
-  background-postion: center;
-  background-repeat: none;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 35px;
   height: 30px;
 }
@@ -427,8 +427,8 @@ label::after {
   display: inline-block;
   background-image: url("../assets/linkedin.svg");
   background-size: cover;
-  background-postion: center;
-  background-repeat: none;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 35px;
   height: 30px;
 }
@@ -454,10 +454,24 @@ label::after {
   margin-bottom: 20px;
 }
 
+.main-aboutme-info a {
+  width: 100%;
+  max-width: 580px;
+  font-size: 1.8rem;
+  font-family: "Karla", sans-serif;
+  line-height: 2.4rem;
+  color: #FFFFFF;
+}
+
+.main-aboutme-info a:hover {
+  color: #4298B3;
+}
+
 .main-skills-info-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 400px;
 }
 
 .main-skills-info ul {
@@ -470,4 +484,287 @@ label::after {
 
 .main-skills-info ul li {
   margin: 8px 20px;
+}
+
+.main-portfolio h2 {
+  width: 100%;
+  max-width: 300px;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 5rem;
+  font-weight: bold;
+  color: #4298B3;
+  margin-bottom: 10px;
+}
+
+.main-portfolio-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.5fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.main-portfolio-card-img {
+  width: 100%;
+  max-width: 580px;
+  height: 240px;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  border-radius: 5px;
+}
+
+.main-portfolio-card-img span {
+  display: inline-block;
+  background-image: url("../assetspf/interactive-price.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.main-portfolio-card-info {
+  width: 100%;
+  height: auto;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -ms-grid;
+  display: grid;
+      grid-template: repeat(1fr, 1fr, 1fr)/repeat(1fr, 1fr, 1fr);
+  gap: 5px 5px;
+}
+
+.main-portfolio-card-info h3 {
+  width: 100%;
+  max-width: 500px;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 4rem;
+  font-weight: bold;
+  margin-top: 15px;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.main-portfolio-card-info__intro {
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.8rem;
+  font-family: "Karla", sans-serif;
+  line-height: 2.4rem;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.main-portfolio-card-info__details {
+      grid-template: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (30px)[30px];
+  -ms-grid-columns: (30px)[30px];
+      grid-template: repeat(30px, 30px)/repeat(30px, 30px);
+  margin-top: 20px;
+}
+
+.main-portfolio-card-info-container {
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid #FFFFFF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.main-portfolio-card-info__details__online {
+  display: inline-block;
+  background-image: url("../assets/online.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.main-portfolio-card-info__details__repo {
+  display: inline-block;
+  background-image: url("../assets/repository.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.main-portfolio-card-info-container:hover {
+  background-color: #4298B3;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border: 1.5px solid #4298B3;
+}
+
+.main-portfolio-card-info-links {
+  max-width: 150px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: 24px;
+}
+
+.main-portfolio-card-info__details .p {
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.main-portfolio-card-info__details .ptwo {
+  width: 100%;
+  max-width: 500px;
+  font-size: 2.4rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.main-nftgallery-container h2 {
+  width: 100%;
+  max-width: 300px;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 5rem;
+  font-weight: bold;
+  color: #4298B3;
+  margin-bottom: 10px;
+}
+
+.main-nftgallery-container p {
+  width: 100%;
+  max-width: 580px;
+  font-size: 1.8rem;
+  font-family: "Karla", sans-serif;
+  line-height: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.main-nftgallery-container p a {
+  width: 100%;
+  max-width: 580px;
+  font-size: 1.8rem;
+  font-family: "Karla", sans-serif;
+  line-height: 2.4rem;
+  color: #FFFFFF;
+}
+
+.main-nftgallery-container p a:hover {
+  color: #4298B3;
+}
+
+.main-nftgallery-containerart {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main-nftgallery-picture {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.main-nftgallery-picture img {
+  width: 100%;
+  max-width: 580px;
+  height: 240px;
+  margin-bottom: 15px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-nftgallery-picture h3 {
+  width: 100%;
+  max-width: 580px;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.main-nftgallery-picture h3 a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #1F1F1F;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-credits {
+  width: 80%;
+  border-top: 1px solid #4298B3;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-credits p {
+  width: 100%;
+  max-width: 300px;
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  line-height: 2.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 5px;
 }
