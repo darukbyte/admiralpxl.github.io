@@ -37,16 +37,6 @@ html {
 .header {
   width: 100%;
   height: 100px;
-<<<<<<< HEAD
-  display: grid;
-  place-items: center;
-  background-color: #1F1F1F;
-}
-
-.header img {
-  width: 70px;
-  height: 80px;
-=======
   margin-bottom: 60px;
   position: fixed;
   z-index: 2;
@@ -197,7 +187,6 @@ label::after {
 
 .header-nav-hamburger-menu-open li a:hover {
   color: #1F1F1F;
->>>>>>> dv
 }
 
 .main {
@@ -210,22 +199,12 @@ label::after {
   display: grid;
   width: 100%;
   height: auto;
-<<<<<<< HEAD
-  grid-template-rows: 180px 400px 240px;
-}
-
-.main-sobremi p, .main-container1 .imagen, .main-container1 .p, .main-container1 h1 {
-  display: inherit;
-  justify-self: center;
-  align-self: center;
-=======
   -ms-grid-rows: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding-top: 60px;
 }
 
 .main-presentation-info {
->>>>>>> dv
   width: 80%;
   height: auto;
   -ms-grid-row: 1;
@@ -234,26 +213,6 @@ label::after {
       justify-self: center;
 }
 
-<<<<<<< HEAD
-.main-sobremi h2, .main-portafolio h2 {
-  font-size: 5rem;
-  font-family: "Playfair Display", serif;
-  width: 100%;
-  margin: 30px;
-}
-
-.main-container1 h1 {
-  font-size: 2.7rem;
-  font-family: "Playfair Display", serif;
-  max-height: 150px;
-}
-
-.main-container1 .p {
-  font-size: 1.8rem;
-  line-height: 3.3rem;
-  align-self: start;
-  max-width: 500px;
-=======
 .main-presentation-info-title {
   width: 100%;
   width: 100%;
@@ -336,7 +295,6 @@ label::after {
   font-weight: bold;
   width: 150px;
   margin-bottom: 8px;
->>>>>>> dv
 }
 
 .main-presentation-image {
@@ -356,28 +314,6 @@ label::after {
   height: 100%;
   display: -ms-grid;
   display: grid;
-<<<<<<< HEAD
-  height: 260px;
-  grid-template: 120px 70px/repeat(3, 1fr);
-}
-
-.main-container1 .imagen {
-  grid-column: 1/4;
-  grid-row: 1;
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
-  position: absolute;
-  top: -120px;
-}
-
-.main-container1 .div p {
-  font-family: "Playfair Display", serif;
-  font-size: 5.2rem;
-  text-align: center;
-  grid-column: 1/4;
-  grid-row: 2;
-=======
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
@@ -407,7 +343,6 @@ label::after {
 .main-presentation-image__back > *:nth-child(5) {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
->>>>>>> dv
 }
 
 .main-presentation-image__back > *:nth-child(6) {
@@ -453,19 +388,6 @@ label::after {
 .main-presentation-image__media div {
   width: 50px;
   height: 50px;
-<<<<<<< HEAD
-  justify-self: center;
-  align-self: center;
-}
-
-.github {
-  background-image: url("/Iconos/github.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  grid-row: 3;
-  grid-column: 1;
-=======
   border: 1.5px solid #FFFFFF;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -676,7 +598,6 @@ label::after {
   display: flex;
   -ms-grid-column-align: center;
       justify-self: center;
->>>>>>> dv
 }
 
 .main-portfolio-card-info__details__online {
@@ -685,14 +606,8 @@ label::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-<<<<<<< HEAD
-  background-size: contain;
-  grid-row: 3;
-  grid-column: 2;
-=======
   width: 40px;
   height: 40px;
->>>>>>> dv
 }
 
 .main-portfolio-card-info__details__repo {
@@ -801,168 +716,6 @@ label::after {
   height: 240px;
   margin-bottom: 15px;
   background-size: contain;
-<<<<<<< HEAD
-  grid-row: 3;
-  grid-column: 3;
-}
-
-.main-portafolio {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.main-portafolio__card {
-  width: 80%;
-  max-width: 320px;
-  height: 350px;
-  margin: 20px;
-  justify-self: center;
-  display: grid;
-  grid-template: repeat(3, 1fr)/repeat(2, 1fr);
-  background-color: #3f3f3f;
-  border-radius: 5px;
-}
-
-.main-portafolio__card img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: fill;
-  width: 80%;
-  max-width: 340px;
-  height: 350px;
-  opacity: 0.5;
-  position: absolute;
-  z-index: 0;
-}
-
-.main-portafolio__card h3 {
-  font-size: 2.7rem;
-  grid-row: 1;
-  grid-column: 1/3;
-  place-self: center;
-  z-index: 1;
-  text-align: center;
-}
-
-.main-portafolio__card p {
-  grid-row: 2;
-  grid-column: 1/3;
-  justify-self: center;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: lighter;
-  max-width: 220px;
-  z-index: 1;
-}
-
-.main-portafolio__card a {
-  grid-column: 1;
-  grid-row: 3;
-  place-self: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #1F1F1F;
-  z-index: 1;
-}
-
-.main-portafolio__card a:hover {
-  transform: scale(1.2);
-  color: #4298B3;
-}
-
-.main-portafolio__card .auno {
-  grid-column: 1;
-}
-
-.main-portafolio__card .ados {
-  grid-column: 2;
-}
-
-.main-sobremi {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-bottom: 50px;
-}
-
-.main-sobremi p {
-  font-size: 1.8rem;
-  line-height: 3.3rem;
-  max-width: 470px;
-}
-
-@media (min-width: 450px) {
-  .main-container1 {
-    grid-template-rows: 180px 360px 240px;
-  }
-}
-@media (min-width: 700px) {
-  .main-container1 {
-    grid-template-rows: 180px 350px 240px;
-  }
-
-  .main-container1 .p {
-    align-self: start;
-    justify-self: start;
-    margin-left: 10%;
-  }
-}
-@media (min-width: 900px) {
-  .main-container1 {
-    grid-template-rows: 180px 500px;
-    grid-template-columns: 70% 30%;
-  }
-
-  .main-container1 h1 {
-    grid-row: 1;
-    grid-column: 1/2;
-  }
-
-  .main-container1 .p {
-    grid-row: 2/3;
-    grid-column: 1/2;
-  }
-
-  .main-container1 .div {
-    grid-row: 1/3;
-    grid-column: 2;
-    height: 100%;
-    grid-template: repeat(4, 1fr)/repeat(3, 1fr);
-    top: -100px;
-    border-bottom-left-radius: 50px;
-  }
-
-  .main-container1 .imagen {
-    grid-column: 1/4;
-    grid-row: 2;
-  }
-
-  .main-container1 .div p {
-    grid-column: 1/4;
-    grid-row: 3;
-  }
-
-  .github {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  .twitter {
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  .linkedin {
-    grid-column: 3;
-    grid-row: 4;
-  }
-=======
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1018,5 +771,4 @@ label::after {
           justify-content: center;
   text-align: center;
   margin-top: 5px;
->>>>>>> dv
 }
