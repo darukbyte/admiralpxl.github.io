@@ -8,6 +8,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 40px;
 }
 
 .main-nftgallery-container, .main-portfolio-container, .main-skills-info ul, .main-skills-info, .main-aboutme-info {
@@ -202,6 +203,7 @@ label::after {
   -ms-grid-rows: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding-top: 60px;
+  margin-bottom: 12px;
 }
 
 .main-presentation-info {
@@ -445,7 +447,7 @@ label::after {
   line-height: 5rem;
   font-weight: bold;
   color: #4298B3;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .main-aboutme-info p, .main-skills-info p {
@@ -498,7 +500,7 @@ label::after {
   line-height: 5rem;
   font-weight: bold;
   color: #4298B3;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .main-portfolio-card {
@@ -549,7 +551,8 @@ label::after {
   font-family: "Oswald", sans-serif;
   line-height: 4rem;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 20px;
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
@@ -666,7 +669,7 @@ label::after {
   line-height: 5rem;
   font-weight: bold;
   color: #4298B3;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .main-nftgallery-container p {
