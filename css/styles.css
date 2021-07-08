@@ -522,12 +522,23 @@ label::after {
   border-radius: 5px;
 }
 
-.main-portfolio-card-img span {
+.main-portfolio-card-img-port {
   display: inline-block;
   background-image: url("../assetspf/interactive-price.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.main-portfolio-card-img-porttwo {
+  display: inline-block;
+  background-image: url("../assetspf/fylopage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-portfolio-card-img span {
   width: 100%;
   height: 100%;
   border-radius: 5px;
