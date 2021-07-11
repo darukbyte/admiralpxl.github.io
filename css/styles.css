@@ -91,8 +91,8 @@ label::after {
   width: 35px;
   height: 5px;
   background: #FFFFFF;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 label {
@@ -200,8 +200,8 @@ label::after {
   display: grid;
   width: 100%;
   height: auto;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
   padding-top: 60px;
   margin-bottom: 12px;
 }
@@ -218,7 +218,7 @@ label::after {
 .main-presentation-info-title {
   width: 100%;
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   font-size: 3rem;
   font-family: "Oswald", sans-serif;
   line-height: 5rem;
@@ -228,7 +228,7 @@ label::after {
 .main-presentation-info-subtitle {
   width: 100%;
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   line-height: 2.4rem;
@@ -452,7 +452,7 @@ label::after {
 
 .main-aboutme-info p, .main-skills-info p {
   width: 100%;
-  max-width: 580px;
+  max-width: 800px;
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   line-height: 2.4rem;
@@ -462,7 +462,7 @@ label::after {
 
 .main-aboutme-info a {
   width: 100%;
-  max-width: 580px;
+  max-width: 700px;
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   line-height: 2.4rem;
@@ -509,7 +509,7 @@ label::after {
   -ms-grid-rows: 0.5fr 1fr;
   grid-template-rows: 0.5fr 1fr;
   height: auto;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -685,7 +685,7 @@ label::after {
 
 .main-nftgallery-container p {
   width: 100%;
-  max-width: 580px;
+  max-width: 800px;
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   line-height: 2.4rem;
@@ -694,7 +694,7 @@ label::after {
 
 .main-nftgallery-container p a {
   width: 100%;
-  max-width: 580px;
+  max-width: 700px;
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   line-height: 2.4rem;
@@ -763,7 +763,7 @@ label::after {
 }
 
 .footer-credits {
-  width: 80%;
+  width: 90%;
   border-top: 1px solid #4298B3;
   margin: 0 auto;
   margin-top: 10px;
@@ -786,4 +786,44 @@ label::after {
           justify-content: center;
   text-align: center;
   margin-top: 5px;
+}
+
+@media (min-width: 700px) {
+  .main-presentation-info-title {
+    font-size: 4.4rem;
+    max-width: 700px;
+    line-height: 5.5rem;
+  }
+
+  .main-aboutme-info h2, .main-skills-info h2, .main-portfolio-container h2, .main-nftgallery-container h2 {
+    font-size: 4.4rem;
+  }
+
+  .main-portfolio-card-info-links, .main-portfolio-card-info-container {
+    -ms-grid-column-align: normal;
+        justify-self: normal;
+  }
+
+  .main-portfolio-card-info__details .p, .main-portfolio-card-info__details .ptwo {
+    text-align: start;
+    -ms-grid-column-align: normal;
+        justify-self: normal;
+  }
+
+  .main-portfolio-card {
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .main-portfolio-card-img span {
+    height: 120%;
+  }
+
+  .main-nftgallery-picture img {
+    height: 300px;
+  }
+
+  .footer {
+    padding-top: 25px;
+  }
 }
