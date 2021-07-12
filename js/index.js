@@ -15,5 +15,3 @@ function menuOpen() {
         open.classList.remove('show');
     }
 }
-
-list[0].addEventListener('click', menuOpen());

@@ -892,6 +892,25 @@ label::after {
     margin-right: 0;
   }
 
+  .header-nav-hamburger-menu-open {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    margin-left: 65px;
+    padding-top: 50px;
+  }
+
+  .header-nav-hamburger-menu-open li {
+    border-bottom: none;
+    text-align: unset;
+    padding: 15px;
+  }
+
+  .header-nav-hamburger-menu-open li a {
+    font-size: 4.8rem;
+    letter-spacing: 0.2rem;
+  }
+
   .main-presentation {
     display: -ms-grid;
     display: grid;
