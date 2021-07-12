@@ -1,7 +1,11 @@
 const open = document.getElementById('open');
 const menu = document.getElementById('menu');
+const list = document.getElementsByName('list');
 
 
+const cerrar = () => {
+    open.classList.remove('show');
+}
 
 function menuOpen() {
     console.log(menu.checked);
@@ -11,3 +15,5 @@ function menuOpen() {
         open.classList.remove('show');
     }
 }
+
+list[0].addEventListener('click', menuOpen());

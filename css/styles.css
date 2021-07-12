@@ -685,7 +685,7 @@ label::after {
 
 .main-nftgallery-container p {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   line-height: 2.4rem;
@@ -825,5 +825,182 @@ label::after {
 
   .footer {
     padding-top: 25px;
+  }
+}
+@media (min-width: 980px) {
+  .header {
+    width: 70px;
+    height: 100vh;
+    margin-bottom: 0;
+  }
+
+  .header-nav {
+    width: 70px;
+    height: 100vh;
+    -ms-grid-rows: 10vh 80vh 10vh;
+    grid-template-rows: 10vh 80vh 10vh;
+    -ms-grid-columns: 70px;
+    grid-template-columns: 70px;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: none;
+  }
+
+  .header-nav > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .header-nav > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .header-nav > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .header-nav-logo {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-left: 0;
+  }
+
+  .header-nav-name {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+
+  .header-nav-hamburger-menu {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-right: 0;
+  }
+
+  .main-presentation {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 0;
+    padding-left: 10%;
+  }
+
+  .main-presentation-info {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    height: 100vh;
+  }
+
+  .main-presentation-image {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+
+  .main-presentation-info-title {
+    max-width: 390px;
+  }
+
+  .main-presentation-info-subtitle {
+    max-width: 360px;
+  }
+
+  .main-aboutme, .main-skills, .main-portfolio, .main-nftgallery {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .main-portfolio-container, .main-nftgallery-container {
+    width: 90%;
+  }
+
+  .container-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 90px;
+  }
+
+  .container-maintwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding-left: 90px;
+  }
+
+  .main-portfolio-card {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 0;
+    grid-template-rows: 0;
+    margin-bottom: 50px;
+  }
+
+  .main-portfolio-card > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .main-portfolio-card > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .main-portfolio-card-info {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    padding-left: 3rem;
+  }
+
+  .main-portfolio-card-info h3 {
+    margin-top: 0;
+  }
+
+  .post {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+
+  .post-two {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    padding-left: 0;
+  }
+
+  .footer {
+    width: 100%;
+    padding-left: 90px;
   }
 }
