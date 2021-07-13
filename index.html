@@ -24,17 +24,21 @@
                 </div>
                 
                 <div class="header-nav-hamburger-menu">
-                    <input type="checkbox" id="menu" onclick="menuOpen()">
-                    <label for="menu"></label>
+
+                     <button id="button" class="header-nav-hamburger-menu-button" onclick="menuOpenButton()">
+                         <div class="button">
+                             <div id="c" class="button-div"></div>
+                         </div>
+                     </button>
                 </div>
 
                 <ul  id="open" class="header-nav-hamburger-menu-open">
-                    <li name="list" ><a href="#home">HOME</a></li>
-                    <li name="list"><a href="#aboutme">ABOUT ME</a></li>
-                    <li name="list"><a href="#skills">SKILLS</a></li>
-                    <li name="list"><a href="#portfolio">PORTFOLIO</a></li>
-                    <li name="list"><a href="#nftgallery">NFT GALLERY</a></li>
-                    <li><a href="#">CONTACT ME</a></li>
+                    <li><a onclick="cerrar()" href="#home">HOME</a></li>
+                    <li><a onclick="cerrar()" href="#aboutme">ABOUT ME</a></li>
+                    <li><a onclick="cerrar()" href="#skills">SKILLS</a></li>
+                    <li><a onclick="cerrar()" href="#portfolio">PORTFOLIO</a></li>
+                    <li><a onclick="cerrar()" href="#nftgallery">NFT GALLERY</a></li>
+                    <li><a onclick="cerrar()" href="#">CONTACT ME</a></li>
                 </ul>
             </nav>
 

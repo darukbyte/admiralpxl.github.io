@@ -1,17 +1,20 @@
 const open = document.getElementById('open');
 const menu = document.getElementById('menu');
-const list = document.getElementsByName('list');
+const button = document.getElementById('button');
+const c = document.getElementById('c');
 
 
 const cerrar = () => {
     open.classList.remove('show');
+    c.classList.remove('button-div-open');
 }
 
-function menuOpen() {
-    console.log(menu.checked);
-    if(menu.checked == true) {
-        open.classList.add('show');
-    } else {
+function menuOpenButton() {
+    if(c.classList.contains('button-div-open')) {
+        c.classList.remove('button-div-open');
         open.classList.remove('show');
+    } else {
+        c.classList.add('button-div-open');
+        open.classList.add('show');
     }
 }

@@ -77,58 +77,74 @@ html {
   -ms-grid-column-align: end;
       justify-self: end;
   margin-right: 1.2rem;
-}
-
-#menu {
-  visibility: hidden;
-}
-
-/*hamburguer*/
-label,
-label::before,
-label::after {
-  position: absolute;
-  width: 35px;
-  height: 5px;
-  background: #FFFFFF;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-label {
   cursor: pointer;
-  top: 45%;
-  left: 14%;
 }
 
-label::before {
+.header-nav-hamburger-menu-button {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #4298B3;
+}
+
+.button {
+  position: relative;
+}
+
+.button-div {
+  width: 2.5rem;
+  height: 0.4rem;
+  background: #FFFFFF;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.button-div:after, .button-div:before {
   content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 0.4rem;
+  background: #FFFFFF;
+  left: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button-div:after {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
 }
 
-label::after {
-  content: "";
+.button-div:before {
   -webkit-transform: translateY(8px);
           transform: translateY(8px);
 }
 
-/* Animate when checked*/
-#menu:checked + label {
-  width: 0px;
-  margin-left: -10px;
+.button-div-open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  background: transparent;
 }
 
-#menu:checked + label::before {
-  -webkit-transform: rotate(45deg) translate(0px);
-          transform: rotate(45deg) translate(0px);
-  margin-left: 10px;
+.button-div-open:after {
+  -webkit-transform: translate(calc(0%), -0.045rem) rotate(-45deg);
+          transform: translate(calc(0%), -0.045rem) rotate(-45deg);
 }
 
-#menu:checked + label::after {
-  -webkit-transform: rotate(-45deg) translate(0px);
-          transform: rotate(-45deg) translate(0px);
-  margin-left: 10px;
+.button-div-open:before {
+  -webkit-transform: translate(calc(0%), -0.045rem) rotate(45deg);
+          transform: translate(calc(0%), -0.045rem) rotate(45deg);
 }
 
 .header-nav-name {
