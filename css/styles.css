@@ -35,6 +35,22 @@ html {
   background-color: #1F1F1F;
 }
 
+.animation {
+  opacity: 0;
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+}
+
+.animation.active {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: 800ms ease-out;
+  transition: 800ms ease-out;
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
+}
+
 .header {
   width: 100%;
   height: 100px;
@@ -173,19 +189,88 @@ html {
 }
 
 .header-nav-hamburger-menu-open {
-  display: none;
   position: absolute;
+  display: inline;
   top: 60px;
   width: 100%;
   height: auto;
   background-color: #4298B3;
   list-style: none;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+}
+
+.unshow {
+  -webkit-animation-name: cerrar;
+          animation-name: cerrar;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .show {
-  display: inline;
+  -webkit-animation-name: abrir;
+          animation-name: abrir;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes abrir {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes abrir {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+@-webkit-keyframes cerrar {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+}
+@keyframes cerrar {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+}
 .header-nav-hamburger-menu-open li {
   padding: 15px;
   margin: auto;
@@ -914,12 +999,74 @@ html {
     top: 0;
     margin-left: 65px;
     padding-top: 50px;
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
   }
 
+  @-webkit-keyframes abrir {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(-150%);
+              transform: translateX(-150%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+  }
+
+  @keyframes abrir {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(-150%);
+              transform: translateX(-150%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+  }
+  @-webkit-keyframes cerrar {
+    from {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+    to {
+      opacity: 0;
+      -webkit-transform: translateX(-150%);
+              transform: translateX(-150%);
+    }
+  }
+  @keyframes cerrar {
+    from {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+    to {
+      opacity: 0;
+      -webkit-transform: translateX(-150%);
+              transform: translateX(-150%);
+    }
+  }
   .header-nav-hamburger-menu-open li {
     border-bottom: none;
     text-align: unset;
     padding: 15px;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-transition: -webkit-transform 300ms ease-in;
+    transition: -webkit-transform 300ms ease-in;
+    transition: transform 300ms ease-in;
+    transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  }
+
+  .header-nav-hamburger-menu-open li:hover {
+    -webkit-transform: translate(10px);
+            transform: translate(10px);
   }
 
   .header-nav-hamburger-menu-open li a {
