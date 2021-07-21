@@ -11,7 +11,6 @@ let options = {
 let observer = new IntersectionObserver(showItem, options);
 
 function showItem (entries) {
-    console.log(entries);
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('active');
